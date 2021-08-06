@@ -1,0 +1,108 @@
+.mobile-hide{
+	display: none;
+}
+/* ==========================================================================
+   Counter Section Style
+   ========================================================================== */
+.fact-container{
+	display: flex;
+	margin-top: -8vw;
+	height: 2vw;
+}
+.fact-container .fact-row{
+	flex: 1;
+	flex-wrap: nowrap;
+}
+.counters {
+  background: url(../img/bg1.jpg) fixed;
+  position: relative;
+  display: flex;
+}
+.counters .facts-item {
+  text-align: center;
+  color: #fff;
+  width: 16vw;
+}
+.counters .facts-item .icon {
+  margin-bottom: 2vw;
+}
+.counters .facts-item .icon i {
+  font-size: 5vw;
+  color: #fff;
+}
+.counters .facts-item .fact-count h3 {
+  font-size: 3vw;
+  color: #fff;
+  margin-bottom: 1vw;
+}
+.counters .facts-item .fact-count h4 {
+  font-size: 2vw;
+  color: #fff;
+}
+
+#portfolios .portfolio-item .shot-item .overlay .text{
+  color: #fff;
+  width: 100%;
+  /*height: 50px;*/
+  text-align: left;
+  margin:0 10px;
+  font-size: 1.4vw;
+}
+
+/*屏幕宽度大于728的，都让下面的 PC大屏样式 覆盖上面的mobile样式*/
+@media screen and (min-width: 728px) {
+	.mobile-hide{
+		display: flex;
+	}
+	.pc-hide{
+		display: none;
+	}
+	/* ==========================================================================
+	   Counter Section Style
+	   ========================================================================== */
+	.fact-container{
+		display: flex;
+		margin-top: 0;
+		height: 100%;
+	}
+	.fact-container .fact-row{
+		flex: 1;
+		flex-wrap: nowrap;
+	}
+	.counters {
+	  background: url(../img/bg1.jpg) fixed;
+	  position: relative;
+	}
+	.counters .facts-item {
+	  text-align: center;
+	  color: #fff;
+	}
+	.counters .facts-item .icon {
+	  margin-bottom: 20px;
+	}
+	.counters .facts-item .icon i {
+	  font-size: 50px;
+	  color: #fff;
+	}
+	.counters .facts-item .fact-count h3 {
+	  font-size: 35px;
+	  color: #fff;
+	  margin-bottom: 15px;
+	}
+	.counters .facts-item .fact-count h4 {
+	  font-size: 20px;
+	  color: #fff;
+	}
+}
+
+/*屏幕宽度大于728的，都让下面的 PC大屏样式 覆盖上面的mobile样式*/
+@media screen and (min-width: 1228px) {
+	#portfolios .portfolio-item .shot-item .overlay .text{
+	  color: #fff;
+	  width: 100%;
+	  /*height: 50px;*/
+	  text-align: left;
+	  margin:0 10px;
+	  font-size: 18px;
+	}
+}

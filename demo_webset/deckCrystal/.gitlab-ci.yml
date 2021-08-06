@@ -1,0 +1,14 @@
+stages:
+  - build
+# 在docker的gitlab-runner容器中构建（正式发布环境）
+jobdockerbuildprod:
+  only:
+    - prod
+  stage: build
+  script:
+    - pwd
+    - rm -rf /home/web/*
+    - cp -r . /home/web/
+    - pwd
+  tags:
+    - dkc_prod
